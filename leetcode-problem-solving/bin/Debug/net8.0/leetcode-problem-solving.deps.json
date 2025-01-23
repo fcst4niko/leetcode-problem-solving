@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "leetcode-problem-solving/1.0.0": {
+        "runtime": {
+          "leetcode-problem-solving.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "leetcode-problem-solving/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

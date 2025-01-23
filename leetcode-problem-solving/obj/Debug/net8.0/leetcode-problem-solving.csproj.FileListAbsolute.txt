@@ -1,0 +1,15 @@
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\bin\Debug\net8.0\leetcode-problem-solving.exe
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\bin\Debug\net8.0\leetcode-problem-solving.deps.json
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\bin\Debug\net8.0\leetcode-problem-solving.runtimeconfig.json
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\bin\Debug\net8.0\leetcode-problem-solving.dll
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\bin\Debug\net8.0\leetcode-problem-solving.pdb
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\leetcode-problem-solving.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\leetcode-problem-solving.AssemblyInfoInputs.cache
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\leetcode-problem-solving.AssemblyInfo.cs
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\leetcode-problem-solving.csproj.CoreCompileInputs.cache
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\leetcode-problem-solving.sourcelink.json
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\leetcode-problem-solving.dll
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\refint\leetcode-problem-solving.dll
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\leetcode-problem-solving.pdb
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\leetcode-problem-solving.genruntimeconfig.cache
+C:\Users\ferna\source\repos\problemsolving\leetcode-problem-solving\obj\Debug\net8.0\ref\leetcode-problem-solving.dll
