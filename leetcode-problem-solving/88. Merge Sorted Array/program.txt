@@ -1,0 +1,35 @@
+// See https://aka.ms/new-console-template for more information
+
+
+Solution solution = new Solution();
+
+//// example N 1
+int[] nums1 = [1, 2, 3, 0, 0, 0];
+int[] nums2 = [2, 5, 6];
+solution.Merge(nums1, 3, nums2, 3);
+
+//// example N 2
+//nums1 = [1];
+//nums2 = [];
+//solution.Merge(nums1, 1, nums2, 0);
+
+//// example N 3
+//nums1 = [0];
+//nums2 = [1];
+//solution.Merge(nums1, 0, nums2, 1);
+
+// //example 4
+//nums1 = [2, 0];
+//nums2 = [1];
+//solution.Merge(nums1, 1, nums2, 1);
+
+////example 5
+//nums1 = [4, 5, 6, 0, 0, 0];
+//nums2 = [1, 2, 3];
+//solution.Merge(nums1, 1, nums2, 1);
+
+////example 6
+nums1 = [-1, 0, 0, 3, 3, 3, 0, 0, 0];
+nums2 = [1, 2, 2];
+solution.Merge(nums1, 6, nums2, 3);
+
