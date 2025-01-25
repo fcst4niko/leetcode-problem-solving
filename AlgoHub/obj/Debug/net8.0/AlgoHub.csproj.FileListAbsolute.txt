@@ -1,0 +1,12 @@
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\bin\Debug\net8.0\AlgoHub.deps.json
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\bin\Debug\net8.0\AlgoHub.dll
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\bin\Debug\net8.0\AlgoHub.pdb
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\obj\Debug\net8.0\AlgoHub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\obj\Debug\net8.0\AlgoHub.AssemblyInfoInputs.cache
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\obj\Debug\net8.0\AlgoHub.AssemblyInfo.cs
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\obj\Debug\net8.0\AlgoHub.csproj.CoreCompileInputs.cache
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\obj\Debug\net8.0\AlgoHub.sourcelink.json
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\obj\Debug\net8.0\AlgoHub.dll
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\obj\Debug\net8.0\refint\AlgoHub.dll
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\obj\Debug\net8.0\AlgoHub.pdb
+C:\Users\ferna\source\repos\problemsolving\AlgoHub\obj\Debug\net8.0\ref\AlgoHub.dll

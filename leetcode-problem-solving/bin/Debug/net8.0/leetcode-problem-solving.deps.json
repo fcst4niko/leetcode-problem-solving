@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "leetcode-problem-solving/1.0.0": {
+        "dependencies": {
+          "AlgoHub": "1.0.0"
+        },
         "runtime": {
           "leetcode-problem-solving.dll": {}
+        }
+      },
+      "AlgoHub/1.0.0": {
+        "runtime": {
+          "AlgoHub.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "leetcode-problem-solving/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AlgoHub/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
