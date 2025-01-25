@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leetcode-problem-solving", "leetcode-problem-solving.csproj", "{81707D34-86E5-41D6-92C7-0964A481EC6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoHub", "..\AlgoHub\AlgoHub.csproj", "{A22699FF-7E56-4B39-B9B7-58068250CE13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{81707D34-86E5-41D6-92C7-0964A481EC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81707D34-86E5-41D6-92C7-0964A481EC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81707D34-86E5-41D6-92C7-0964A481EC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22699FF-7E56-4B39-B9B7-58068250CE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22699FF-7E56-4B39-B9B7-58068250CE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22699FF-7E56-4B39-B9B7-58068250CE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22699FF-7E56-4B39-B9B7-58068250CE13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
