@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Compile Include="169. Majority Element\Program.txt" />
+    <Compile Include="189. Rotate Array\Program.txt" />
     <Compile Include="80. Remove Duplicates from Sorted Array II\Program.txt" />
   </ItemGroup>
 

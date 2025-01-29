@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlgoHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+688ad73a702837a322afd0367493e67b4cbc84c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77efc72c09316054c7298989a5507cf85ade555d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlgoHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlgoHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
