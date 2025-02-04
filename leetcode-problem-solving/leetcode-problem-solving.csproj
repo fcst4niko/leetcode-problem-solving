@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="122. Best Time to Buy and Sell Stock II\Programa.txt" />
     <Compile Include="169. Majority Element\Program.txt" />
     <Compile Include="189. Rotate Array\Program.txt" />
     <Compile Include="80. Remove Duplicates from Sorted Array II\Program.txt" />
