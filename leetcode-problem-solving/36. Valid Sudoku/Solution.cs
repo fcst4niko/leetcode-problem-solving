@@ -14,138 +14,158 @@ namespace leetcode_problem_solving._36._Valid_Sudoku
 
             if (!CheckBoard(board, l)) return false;
 
-            List<char[][]> listOfBoards = Split3x3Boards(board);
-
-            foreach (var b in listOfBoards)
-            {
-                l = b.Length;
-                if (!CheckBoard(b, l)) return false;
-            }
+            if (!Validate3x3Boards(board)) return false;
 
             return true;
         }
 
-        private static List<char[][]> Split3x3Boards(char[][] board)
+        private static bool Validate3x3Boards(char[][] board)
         {
-            var listOfBoards = new List<char[][]>();
 
             int x = 0, y = 1, z = 2;
 
-            char[][] board3x3 = new char[][]
-            {
-                new char[] { board[x][0], board[x][1], board[x][2] },
-                new char[] { board[y][0], board[y][1], board[y][2] },
-                new char[] { board[z][0], board[z][1], board[z][2] }
-            };
-
-
-
-            listOfBoards.Add(board3x3);
-
-            x = 0;
-            y = 1;
-            z = 2;
-
-            board3x3 = new char[ ][]
-             {
-                new char[] { board[x][3], board[x][4], board[x][5] },
-                new char[] { board[y][3], board[y][4], board[y][5] },
-                new char[] { board[z][3], board[z][4], board[z][5] }
-            };
-
-            listOfBoards.Add(board3x3);
+            HashSet<char> boardSet = new HashSet<char>();
+            if (board[x][0] != '.' && !boardSet.Add(board[x][0])) return false;
+            if (board[y][0] != '.' && !boardSet.Add(board[y][0])) return false;
+            if (board[z][0] != '.' && !boardSet.Add(board[z][0])) return false;
+            if (board[x][1] != '.' && !boardSet.Add(board[x][1])) return false;
+            if (board[y][1] != '.' && !boardSet.Add(board[y][1])) return false;
+            if (board[z][1] != '.' && !boardSet.Add(board[z][1])) return false;
+            if (board[x][2] != '.' && !boardSet.Add(board[x][2])) return false;
+            if (board[y][2] != '.' && !boardSet.Add(board[y][2])) return false;
+            if (board[z][2] != '.' && !boardSet.Add(board[z][2])) return false;
+            boardSet.Clear();
 
             x = 0;
             y = 1;
             z = 2;
 
-            board3x3 = new char[][]
-            {
-                new char[] { board[x][6], board[x][7], board[x][8] },
-                new char[] { board[y][6], board[y][7], board[y][8] },
-                new char[] { board[z][6], board[z][7], board[z][8] }
-            };
+            boardSet = new HashSet<char>();
+            if (board[x][3] != '.' && !boardSet.Add(board[x][3])) return false;
+            if (board[y][3] != '.' && !boardSet.Add(board[y][3])) return false;
+            if (board[z][3] != '.' && !boardSet.Add(board[z][3])) return false;
+            if (board[x][4] != '.' && !boardSet.Add(board[x][4])) return false;
+            if (board[y][4] != '.' && !boardSet.Add(board[y][4])) return false;
+            if (board[z][4] != '.' && !boardSet.Add(board[z][4])) return false;
+            if (board[x][5] != '.' && !boardSet.Add(board[x][5])) return false;
+            if (board[y][5] != '.' && !boardSet.Add(board[y][5])) return false;
+            if (board[z][5] != '.' && !boardSet.Add(board[z][5])) return false;
+            boardSet.Clear();
 
-            listOfBoards.Add(board3x3);
+            x = 0;
+            y = 1;
+            z = 2;
 
-            x = 3;
-            y = 4;
-            z = 5;
-
-            board3x3 = new char[][]
-            {
-                new char[] { board[x][0], board[x][1], board[x][2] },
-                new char[] { board[y][0], board[y][1], board[y][2] },
-                new char[] { board[z][0], board[z][1], board[z][2] }
-            };
-
-            listOfBoards.Add(board3x3);
-
-            x = 3;
-            y = 4;
-            z = 5;
-
-            board3x3 = new char[][]
-            {
-                new char[] { board[x][3], board[x][4], board[x][5] },
-                new char[] { board[y][3], board[y][4], board[y][5] },
-                new char[] { board[z][3], board[z][4], board[z][5] }
-            };
-
-            listOfBoards.Add(board3x3);
+            boardSet = new HashSet<char>();
+            if (board[x][6] != '.' && !boardSet.Add(board[x][6])) return false;
+            if (board[y][6] != '.' && !boardSet.Add(board[y][6])) return false;
+            if (board[z][6] != '.' && !boardSet.Add(board[z][6])) return false;
+            if (board[x][7] != '.' && !boardSet.Add(board[x][7])) return false;
+            if (board[y][7] != '.' && !boardSet.Add(board[y][7])) return false;
+            if (board[z][7] != '.' && !boardSet.Add(board[z][7])) return false;
+            if (board[x][8] != '.' && !boardSet.Add(board[x][8])) return false;
+            if (board[y][8] != '.' && !boardSet.Add(board[y][8])) return false;
+            if (board[z][8] != '.' && !boardSet.Add(board[z][8])) return false;
+            boardSet.Clear();
 
             x = 3;
             y = 4;
             z = 5;
 
-            board3x3 = new char[][]
-            {
-                new char[] { board[x][6], board[x][7], board[x][8] },
-                new char[] { board[y][6], board[y][7], board[y][8] },
-                new char[] { board[z][6], board[z][7], board[z][8] }
-            };
+            boardSet = new HashSet<char>();
+            if (board[x][0] != '.' && !boardSet.Add(board[x][0])) return false;
+            if (board[y][0] != '.' && !boardSet.Add(board[y][0])) return false;
+            if (board[z][0] != '.' && !boardSet.Add(board[z][0])) return false;
+            if (board[x][1] != '.' && !boardSet.Add(board[x][1])) return false;
+            if (board[y][1] != '.' && !boardSet.Add(board[y][1])) return false;
+            if (board[z][1] != '.' && !boardSet.Add(board[z][1])) return false;
+            if (board[x][2] != '.' && !boardSet.Add(board[x][2])) return false;
+            if (board[y][2] != '.' && !boardSet.Add(board[y][2])) return false;
+            if (board[z][2] != '.' && !boardSet.Add(board[z][2])) return false;
+            boardSet.Clear();
 
-            listOfBoards.Add(board3x3);
+            x = 3;
+            y = 4;
+            z = 5;
+
+            boardSet = new HashSet<char>();
+            if (board[x][3] != '.' && !boardSet.Add(board[x][3])) return false;
+            if (board[y][3] != '.' && !boardSet.Add(board[y][3])) return false;
+            if (board[z][3] != '.' && !boardSet.Add(board[z][3])) return false;
+            if (board[x][4] != '.' && !boardSet.Add(board[x][4])) return false;
+            if (board[y][4] != '.' && !boardSet.Add(board[y][4])) return false;
+            if (board[z][4] != '.' && !boardSet.Add(board[z][4])) return false;
+            if (board[x][5] != '.' && !boardSet.Add(board[x][5])) return false;
+            if (board[y][5] != '.' && !boardSet.Add(board[y][5])) return false;
+            if (board[z][5] != '.' && !boardSet.Add(board[z][5])) return false;
+            boardSet.Clear();
+
+            x = 3;
+            y = 4;
+            z = 5;
+
+
+            boardSet = new HashSet<char>();
+            if (board[x][6] != '.' && !boardSet.Add(board[x][6])) return false;
+            if (board[y][6] != '.' && !boardSet.Add(board[y][6])) return false;
+            if (board[z][6] != '.' && !boardSet.Add(board[z][6])) return false;
+            if (board[x][7] != '.' && !boardSet.Add(board[x][7])) return false;
+            if (board[y][7] != '.' && !boardSet.Add(board[y][7])) return false;
+            if (board[z][7] != '.' && !boardSet.Add(board[z][7])) return false;
+            if (board[x][8] != '.' && !boardSet.Add(board[x][8])) return false;
+            if (board[y][8] != '.' && !boardSet.Add(board[y][8])) return false;
+            if (board[z][8] != '.' && !boardSet.Add(board[z][8])) return false;
+            boardSet.Clear();
 
             x = 6;
             y = 7;
             z = 8;
 
-            board3x3 = new char[][]
-            {
-                new char[] { board[x][0], board[x][1], board[x][2] },
-                new char[] { board[y][0], board[y][1], board[y][2] },
-                new char[] { board[z][0], board[z][1], board[z][2] }
-            };
-
-            listOfBoards.Add(board3x3);
-
-            x = 6;
-            y = 7;
-            z = 8;
-
-            board3x3 = new char[][]
-            {
-                new char[] { board[x][3], board[x][4], board[x][5] },
-                new char[] { board[y][3], board[y][4], board[y][5] },
-                new char[] { board[z][3], board[z][4], board[z][5] }
-            };
-
-            listOfBoards.Add(board3x3);
+            boardSet = new HashSet<char>();
+            if (board[x][0] != '.' && !boardSet.Add(board[x][0])) return false;
+            if (board[y][0] != '.' && !boardSet.Add(board[y][0])) return false;
+            if (board[z][0] != '.' && !boardSet.Add(board[z][0])) return false;
+            if (board[x][1] != '.' && !boardSet.Add(board[x][1])) return false;
+            if (board[y][1] != '.' && !boardSet.Add(board[y][1])) return false;
+            if (board[z][1] != '.' && !boardSet.Add(board[z][1])) return false;
+            if (board[x][2] != '.' && !boardSet.Add(board[x][2])) return false;
+            if (board[y][2] != '.' && !boardSet.Add(board[y][2])) return false;
+            if (board[z][2] != '.' && !boardSet.Add(board[z][2])) return false;
+            boardSet.Clear();
 
             x = 6;
             y = 7;
             z = 8;
 
-            board3x3 = new char[][]
-            {
-                new char[] { board[x][6], board[x][7], board[x][8] },
-                new char[] { board[y][6], board[y][7], board[y][8] },
-                new char[] { board[z][6], board[z][7], board[z][8] }
-            };
+            boardSet = new HashSet<char>();
+            if (board[x][3] != '.' && !boardSet.Add(board[x][3])) return false;
+            if (board[y][3] != '.' && !boardSet.Add(board[y][3])) return false;
+            if (board[z][3] != '.' && !boardSet.Add(board[z][3])) return false;
+            if (board[x][4] != '.' && !boardSet.Add(board[x][4])) return false;
+            if (board[y][4] != '.' && !boardSet.Add(board[y][4])) return false;
+            if (board[z][4] != '.' && !boardSet.Add(board[z][4])) return false;
+            if (board[x][5] != '.' && !boardSet.Add(board[x][5])) return false;
+            if (board[y][5] != '.' && !boardSet.Add(board[y][5])) return false;
+            if (board[z][5] != '.' && !boardSet.Add(board[z][5])) return false;
+            boardSet.Clear();
 
-            listOfBoards.Add(board3x3);
-            return listOfBoards;
+            x = 6;
+            y = 7;
+            z = 8;
+
+            boardSet = new HashSet<char>();
+            if (board[x][6] != '.' && !boardSet.Add(board[x][6])) return false;
+            if (board[y][6] != '.' && !boardSet.Add(board[y][6])) return false;
+            if (board[z][6] != '.' && !boardSet.Add(board[z][6])) return false;
+            if (board[x][7] != '.' && !boardSet.Add(board[x][7])) return false;
+            if (board[y][7] != '.' && !boardSet.Add(board[y][7])) return false;
+            if (board[z][7] != '.' && !boardSet.Add(board[z][7])) return false;
+            if (board[x][8] != '.' && !boardSet.Add(board[x][8])) return false;
+            if (board[y][8] != '.' && !boardSet.Add(board[y][8])) return false;
+            if (board[z][8] != '.' && !boardSet.Add(board[z][8])) return false;
+            boardSet.Clear();
+
+            return true;
         }
 
         private static bool CheckBoard(char[][] board, int l)
