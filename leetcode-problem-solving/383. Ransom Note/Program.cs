@@ -1,16 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._383._Ransom_Note;
-using System.Diagnostics;
+//using leetcode_problem_solving._383._Ransom_Note;
+//using System.Diagnostics;
 
-Solution Solution = new Solution();
-
-
-//string ransomNote = "a", magazine = "b";
-string ransomNote = "aa", magazine = "aab";
-//string ransomNote = "aa", magazine = "ab";
+//Solution Solution = new Solution();
 
 
-Console.WriteLine(Solution.CanConstruct(ransomNote, magazine));
+////string ransomNote = "a", magazine = "b";
+//string ransomNote = "aa", magazine = "aab";
+////string ransomNote = "aa", magazine = "ab";
 
-Console.ReadLine();
+
+//Console.WriteLine(Solution.CanConstruct(ransomNote, magazine));
+
+//Console.ReadLine();

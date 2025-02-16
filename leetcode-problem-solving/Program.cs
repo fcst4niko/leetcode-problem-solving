@@ -1,16 +1,47 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._383._Ransom_Note;
-using System.Diagnostics;
+using leetcode_problem_solving._54._Spiral_Matrix;
+
 
 Solution Solution = new Solution();
 
+//int[][] matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+//int[][] matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]];
+int[][] matrix = [[6, 9, 7]];
+//int[][] matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20], [21, 22, 23, 24]];
+//int[][] matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20], [21, 22, 23, 24, 25]];
 
-//string ransomNote = "a", magazine = "b";
-string ransomNote = "aa", magazine = "aab";
-//string ransomNote = "aa", magazine = "ab";
+//Output
+//[1, 2, 3, 4, 5, 10, 15, 20, 25, 24, 23, 22, 21, 16, 11, 6, 7, 8, 9, 14, 19, 18, 17, 12, 12]
+
+//Expected
+//[1, 2, 3, 4, 5, 10, 15, 20, 25, 24, 23, 22, 21, 16, 11, 6, 7, 8, 9, 14, 19, 18, 17, 12, 13]
+
+//[01, 02, 03, 04, 05]
+//[06, 07, 08, 09, 10]
+//[11, 12, 13, 14, 15]
+//[16, 17, 18, 19, 20]
+//[21, 22, 23, 24, 25]
+
+//0 a n
+//n a n
+//n a 0
+//0 a 0
 
 
-Console.WriteLine(Solution.CanConstruct(ransomNote, magazine));
+
+
+//[01, 02, 03, 04]
+//[05, 06, 07, 08]
+//[09, 10, 11, 12]
+//[13, 14, 15, 16]
+//[17, 18, 19, 20]
+//[21, 22, 23, 24]
+
+
+foreach (var item in Solution.SpiralOrder(matrix))
+{
+    Console.WriteLine(item);
+}
 
 Console.ReadLine();
