@@ -1,47 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._54._Spiral_Matrix;
+using leetcode_problem_solving._205._Isomorphic_Strings;
+
+Solution solution = new Solution();
 
 
-Solution Solution = new Solution();
+//string s = "egg", t = "add";
+//string s = "foo", t = "bar";
+//string s = "paper", t = "title";
+string s = "babc", t = "baba";
 
-//int[][] matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-//int[][] matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]];
-int[][] matrix = [[6, 9, 7]];
-//int[][] matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20], [21, 22, 23, 24]];
-//int[][] matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20], [21, 22, 23, 24, 25]];
-
-//Output
-//[1, 2, 3, 4, 5, 10, 15, 20, 25, 24, 23, 22, 21, 16, 11, 6, 7, 8, 9, 14, 19, 18, 17, 12, 12]
-
-//Expected
-//[1, 2, 3, 4, 5, 10, 15, 20, 25, 24, 23, 22, 21, 16, 11, 6, 7, 8, 9, 14, 19, 18, 17, 12, 13]
-
-//[01, 02, 03, 04, 05]
-//[06, 07, 08, 09, 10]
-//[11, 12, 13, 14, 15]
-//[16, 17, 18, 19, 20]
-//[21, 22, 23, 24, 25]
-
-//0 a n
-//n a n
-//n a 0
-//0 a 0
-
-
-
-
-//[01, 02, 03, 04]
-//[05, 06, 07, 08]
-//[09, 10, 11, 12]
-//[13, 14, 15, 16]
-//[17, 18, 19, 20]
-//[21, 22, 23, 24]
-
-
-foreach (var item in Solution.SpiralOrder(matrix))
-{
-    Console.WriteLine(item);
-}
+Console.WriteLine(solution.IsIsomorphic(s, t));
 
 Console.ReadLine();
