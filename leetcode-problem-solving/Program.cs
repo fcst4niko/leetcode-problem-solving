@@ -1,15 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._205._Isomorphic_Strings;
+using leetcode_problem_solving._228._Summary_Ranges;
 
 Solution solution = new Solution();
 
+int[] nums = [0, 1, 2, 4, 5, 7];
 
-//string s = "egg", t = "add";
-//string s = "foo", t = "bar";
-//string s = "paper", t = "title";
-string s = "babc", t = "baba";
-
-Console.WriteLine(solution.IsIsomorphic(s, t));
+foreach (var item in solution.SummaryRanges(nums))
+{
+    Console.WriteLine(item);
+}
 
 Console.ReadLine();
