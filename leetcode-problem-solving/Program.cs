@@ -1,15 +1,23 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._71._Simplify_Path;
+using leetcode_problem_solving._141._Linked_List_Cycle;
 
 Solution solution = new Solution();
 
-Console.WriteLine(solution.SimplifyPath("/home/"));
-Console.WriteLine(solution.SimplifyPath("/home//foo/"));
-Console.WriteLine(solution.SimplifyPath("/home/user/Documents/../Pictures"));
-Console.WriteLine(solution.SimplifyPath("/../"));
-Console.WriteLine(solution.SimplifyPath("/.../a/../b/c/../d/./"));
-Console.WriteLine(solution.SimplifyPath("/"));
-Console.WriteLine(solution.SimplifyPath("///"));
+//[3, 2, 0, -4]
+//ListNode head = new ListNode(3);
+//head.next = new ListNode(2);
+//head.next.next = new ListNode(0);
+//head.next.next.next = new ListNode(-4);
+
+//ListNode head = new ListNode(1);
+//head.next = new ListNode(2);
+
+ListNode head = new ListNode(4);
+
+
+
+
+Console.WriteLine(solution.HasCycle(head));
 
 Console.ReadLine();
