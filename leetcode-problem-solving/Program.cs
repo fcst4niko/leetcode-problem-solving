@@ -1,23 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._141._Linked_List_Cycle;
+using leetcode_problem_solving._290._Word_Pattern;
 
 Solution solution = new Solution();
 
-//[3, 2, 0, -4]
-//ListNode head = new ListNode(3);
-//head.next = new ListNode(2);
-//head.next.next = new ListNode(0);
-//head.next.next.next = new ListNode(-4);
+//string pattern = "abba", s = "dog cat cat dog";
+//string pattern = "abba", s = "dog cat cat fish";
+//string pattern = "aaaa", s = "dog cat cat dog";
+string pattern = "abba", s = "dog dog dog dog";
 
-//ListNode head = new ListNode(1);
-//head.next = new ListNode(2);
-
-ListNode head = new ListNode(4);
-
-
-
-
-Console.WriteLine(solution.HasCycle(head));
+Console.WriteLine(solution.WordPattern(pattern, s));
 
 Console.ReadLine();
