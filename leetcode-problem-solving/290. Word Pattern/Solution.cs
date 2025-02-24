@@ -16,22 +16,19 @@
                 var currentPattern = pattern[i];
                 var currentWord = words[i];
 
-                bool wordExist = dictionary.ContainsValue(currentWord);
-
                 if (dictionary.ContainsKey(currentPattern)
                     && dictionary[currentPattern] != currentWord)
                 {
                     return false;
                 }
-                else if (!dictionary.ContainsKey(currentPattern) 
-                    && !wordExist)
-                {                   
-                    dictionary.Add(currentPattern, currentWord);
-                }
-                else if (!dictionary.ContainsKey(currentPattern)
-                    && wordExist)
+                else if (!dictionary.ContainsKey(currentPattern))
                 {
-                    return false;
+                    if (dictionary.ContainsValue(currentWord))
+                    {
+                        return false;
+                    }
+
+                    dictionary.Add(currentPattern, currentWord);
                 }
 
                 i++;
