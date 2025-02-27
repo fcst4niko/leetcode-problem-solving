@@ -1,25 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._21._Merge_Two_Sorted_Lists;
+using leetcode_problem_solving._392._Is_Subsequence;
 
 Solution solution = new Solution();
 
-ListNode list1 = new ListNode(2);
-//ListNode list1 = new ListNode(1);
-//list1.next = new ListNode(2);
-//list1.next.next = new ListNode(4);
+//string s = "abc", t = "ahbgdc";
+//string s = "axc", t = "ahbgdc";
+string s = "aaaaaa", t = "bbaaaa";
 
-ListNode list2 = new ListNode(1);
-//ListNode list2 = new ListNode(1);
-//list2.next = new ListNode(3);
-//list2.next.next = new ListNode(4);
+var result = solution.IsSubsequence(s, t);
 
-
-var result = solution.MergeTwoLists(list1, list2);
-while (result != null)
-{
-    Console.WriteLine(result.val);
-    result = result.next;
-}
-
+Console.WriteLine(result);
 Console.ReadLine();
