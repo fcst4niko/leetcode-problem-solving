@@ -1,14 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._392._Is_Subsequence;
+using leetcode_problem_solving._238._Product_of_Array_Except_Self;
 
 Solution solution = new Solution();
 
-//string s = "abc", t = "ahbgdc";
-//string s = "axc", t = "ahbgdc";
-string s = "aaaaaa", t = "bbaaaa";
+//int[] nums = { 1, 2, 3, 4 };
+int[] nums = { -1, 1, 0, -3, 3 };
 
-var result = solution.IsSubsequence(s, t);
 
-Console.WriteLine(result);
+var result = solution.ProductExceptSelf(nums);
+
+foreach (var item in result)
+{
+    Console.WriteLine(item);
+}
+
 Console.ReadLine();
