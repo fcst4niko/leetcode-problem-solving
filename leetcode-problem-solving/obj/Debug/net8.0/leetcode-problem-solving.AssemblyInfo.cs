@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("leetcode-problem-solving")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf997c5731af0b18fe705446250dabed64bc070e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83a1a34a1ed597a73bf7d7233f06952123a4668d")]
 [assembly: System.Reflection.AssemblyProductAttribute("leetcode-problem-solving")]
 [assembly: System.Reflection.AssemblyTitleAttribute("leetcode-problem-solving")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
