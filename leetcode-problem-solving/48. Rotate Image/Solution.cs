@@ -17,8 +17,8 @@ namespace leetcode_problem_solving._48._Rotate_Image
             int x = 0, y = 0;
             int xCurrent = 0;
 
-            while (steps > 1)
-            {
+            while (steps >= y)
+            {                
                 if (xCurrent == steps)
                 {
                     x++;
@@ -30,7 +30,7 @@ namespace leetcode_problem_solving._48._Rotate_Image
                 {
                     var current = matrix[y][xCurrent];
 
-                    if (xCurrent + steps > steps)
+                    if (xCurrent + steps > steps + x)
                     {
                         current = ProcessNonBorders(matrix, steps, xCurrent, x, y, current);
                     }
@@ -47,8 +47,8 @@ namespace leetcode_problem_solving._48._Rotate_Image
         private static int ProcessBorders(int[][] matrix, int steps, int x, int y, int current)
         {
             // 1 de 4 movimientos
-            var aux = matrix[0][steps];
-            matrix[0][steps] = current;
+            var aux = matrix[x][steps];
+            matrix[x][steps] = current;
             current = aux;
 
             // 2 de 4 movimientos
@@ -57,13 +57,13 @@ namespace leetcode_problem_solving._48._Rotate_Image
             current = aux;
 
             // 3 de 4 movimientos
-            aux = matrix[steps][0];
-            matrix[steps][0] = current;
+            aux = matrix[steps][x];
+            matrix[steps][x] = current;
             current = aux;
 
             // 4 de 4 movimientos
-            aux = matrix[0][0];
-            matrix[0][0] = current;
+            aux = matrix[x][x];
+            matrix[x][x] = current;
             current = aux;
 
             return current;
@@ -73,14 +73,14 @@ namespace leetcode_problem_solving._48._Rotate_Image
         {
             // 1 de 4 movimientos
             var nextX = steps;
-            var nextY = y + (steps - xCurrent);
+            var nextY = y + (xCurrent - x);
 
             var aux = matrix[nextY][nextX];
             matrix[nextY][nextX] = current;
             current = aux;
 
             // 2 de 4 movimientos
-            nextX -= y + (steps - xCurrent);
+            nextX = y + (steps - xCurrent);
             nextY = steps;
 
             aux = matrix[nextY][nextX];
@@ -89,7 +89,7 @@ namespace leetcode_problem_solving._48._Rotate_Image
 
             // 3 de 4 movimientos
             nextX = x;
-            nextY = xCurrent;
+            nextY = steps - xCurrent + x;
 
             aux = matrix[nextY][nextX];
             matrix[nextY][nextX] = current;
