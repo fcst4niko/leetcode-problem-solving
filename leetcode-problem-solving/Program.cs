@@ -1,7 +1,7 @@
 ﻿
 //// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._242._Valid_Anagram;
+using leetcode_problem_solving._209._Minimum_Size_Subarray_Sum;
 
 Solution solution = new Solution();
 
@@ -51,11 +51,11 @@ Solution solution = new Solution();
 //Console.ReadLine();
 
 
-var s = "ab";
-var t = "ba";
+//int[] num = new int[] { 2, 3, 1, 2, 4, 3 };
+int[] num = new int[] { 12, 28, 83, 4, 25, 26, 25, 2, 25, 25, 25, 12};
+int target = 213;
 
-
-Console.WriteLine(solution.IsAnagram(s,t));
+Console.WriteLine(solution.MinSubArrayLen(target, num));
 
 Console.ReadLine();
 
