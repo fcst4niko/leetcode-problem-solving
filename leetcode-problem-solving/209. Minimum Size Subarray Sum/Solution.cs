@@ -37,8 +37,9 @@ namespace leetcode_problem_solving._209._Minimum_Size_Subarray_Sum
             sum = 0;
             var prevWindow = window;
             window--;
-            while (window > 0)
+            while (window > 1)
             {
+                isBreaked = false;
                 for (int i = 0; i < window; i++)
                 {
                     sum += nums[i];
@@ -69,7 +70,7 @@ namespace leetcode_problem_solving._209._Minimum_Size_Subarray_Sum
                 sum = 0;
             }
 
-            return 0;
+            return prevWindow;
         }
     }
 }
