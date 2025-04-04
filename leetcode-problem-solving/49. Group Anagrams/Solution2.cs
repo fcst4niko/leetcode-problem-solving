@@ -3,39 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace leetcode_problem_solving._49._Group_Anagrams
 {
-    public class Solution
+    public class Solution2
     {
         public IList<IList<string>> GroupAnagrams(string[] strs)
         {
-            IDictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
+            IList<IList<string>> result = new List<IList<string>>();
+            HashSet<int> index = new HashSet<int>();
 
-            foreach (var item in strs)
+            for (int i = 0; i < strs.Length; i++)
             {
-                var found = false;
-                foreach (var value in dictionary.Keys)
+                if (index.Contains(i)) continue;
+                var innerList = new List<string>();
+
+                innerList.Add(strs[i]);
+
+                for (int j = i + 1; j < strs.Length; j++)
                 {
-                    if (IsAnagram(item, value))
+                    if (index.Contains(j)) continue;
+                    if (i != j)
                     {
-                        dictionary[value].Add(item);
-                        found = true;
+                        if (IsAnagram(strs[i], strs[j]))
+                        {
+                            innerList.Add(strs[j]);
+                            index.Add(j);
+                        }
                     }
                 }
-
-                if (found == false)
-                {
-                    dictionary.Add(item, new List<string> { item });
-                }
-            }
-
-            IList<IList<string>> result = new List<IList<string>>();            
-
-            foreach (var value in dictionary.Values)
-            {
-                result.Add(value);
+                index.Add(i);
+                result.Add(innerList);
             }
 
             return result;
