@@ -10,11 +10,16 @@ namespace leetcode_problem_solving._134._Gas_Station
     {
         public int CanCompleteCircuit(int[] gas, int[] cost)
         {
+            if (gas.Length == 1 && gas[0] >= cost[0])
+            {
+                return 0;
+            }
+
             var tank = 0;
             var startPoint = FindStartPoint(gas, cost);
             var cont = 0;
 
-            for (int i = startPoint; i < gas.Length && cont < gas.Length && startPoint > 0; i++)
+            for (int i = startPoint; i < gas.Length && cont < gas.Length && startPoint > -1; i++)
             {
                 var gasUnit = gas[i];
                 var currentCost = cost[i];
@@ -59,7 +64,7 @@ namespace leetcode_problem_solving._134._Gas_Station
                 }
             }
 
-            return 0;
+            return -1;
         }
     }
 }
