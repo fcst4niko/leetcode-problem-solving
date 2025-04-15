@@ -1,19 +1,13 @@
 ﻿
 //// See https://aka.ms/new-console-template for more information
 
-using leetcode_problem_solving._134._Gas_Station;
+using leetcode_problem_solving._1._Two_Sum;
 
 Solution solution = new Solution();
 
-// CASO 1
-//int[] gas = [1, 2, 3, 4, 5];
-//int[] cost = [3, 4, 5, 1, 2];
-// CASO 1
-int[] gas = [2, 3, 4];
-int[] cost = [3, 4, 3];
+int[] nums = [2, 7, 11, 15];
+int target = 9;
 
-solution.CanCompleteCircuit(gas,cost);
+solution.TwoSum(nums, target);
 
 Console.ReadLine();
-
-
